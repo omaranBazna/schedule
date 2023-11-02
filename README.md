@@ -16,7 +16,7 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 
 1- Every sprint I will open a set of issues for the sprint, along with a brief description <br><br>
 2- Everyone should select one issue at a time after you select the issue, you create a new branch with the name [issuename-yourname] <br><br>
-3- Once you create the branch, pull the repo branch into your local Visual Code Editor <br><br>
+3- Once you create the branch, pull the repo correct branch into your local Visual Code Editor <br><br>
 4- Once you pull it, you make the changes, and once done you push the changes into the branch again <br><br>
 5- Once pushing it, you make a pull request to the correct branch <br><br>
 6- I will review the pull request, then we start having a conversation in the pull request conversation and I will request some changes <br><br>
