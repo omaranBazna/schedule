@@ -23,14 +23,19 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 7- You do the changes on your local Visual Code Editor <br><br>
 8- push the changes again and so on <br><br>
 9- I will accept the "pull request" so the branch will be merged into the target branch <br><br>
-10- We keep doing this until all sprint issues resolved <br>
+10- We keep doing this until all sprint issues are resolved <br>
 
 
 ## General rules:
 
-
-
-
+1- make sure to read the issue description carefully  <br><br>
+2- you are allowed to create issues if you think there is something missing   <br><br>
+3- Create a new branch before you make any single change <br><br>
+4- Make sure to push your work in small changes rather than doing all of it in one large change <br><br>
+5- Our Communication should be as much as possible through GitHub so that we document every single thing in time  <br><br>
+6- Add a clear description to anything you do 
+7- Choose a good and descriptive names / titles for you branches names, pull requests titles
+8- Feel free to send me a whatsapp message and I will respond as soon as I can 
 
 # Branches Map 
 ![Branches_map drawio](https://github.com/omaranBazna/schedule/assets/100542103/503c99a7-a119-4c90-af1b-7b99eb433cbb)
