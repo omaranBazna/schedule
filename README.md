@@ -28,6 +28,7 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 
 ## General rules:
 
+
 1- make sure to read the issue description carefully  <br><br>
 2- you are allowed to create issues if you think there is something missing   <br><br>
 3- Create a new branch before you make any single change <br><br>
