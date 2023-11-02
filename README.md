@@ -2,7 +2,7 @@
 
 This app was created to help UDM Mercy for schedule the classes in Engineering department
 
-
+# Useful command:
 # How to use GitHub for team management
 
 1- Make sure all team members have access to the repo and are added as collaborators. You can add people directly when creating the repo or invite them later.<br><br>
