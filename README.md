@@ -34,9 +34,9 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 3- Create a new branch before you make any single change <br><br>
 4- Make sure to push your work in small changes rather than doing all of it in one large change <br><br>
 5- Our Communication should be as much as possible through GitHub so that we document every single thing in time  <br><br>
-6- Add a clear description to anything you do 
-7- Choose a good and descriptive names / titles for you branches names, pull requests titles
-8- Feel free to send me a whatsapp message and I will respond as soon as I can 
+6- Add a clear description to anything you do <br><br>
+7- Choose good and descriptive names/titles for you branches' names, pull request titles <br><br>
+8- Feel free to send me a WhatsApp message and I will respond as soon as I can  <br><br>
 
 # Branches Map 
 ![Branches_map drawio](https://github.com/omaranBazna/schedule/assets/100542103/503c99a7-a119-4c90-af1b-7b99eb433cbb)
