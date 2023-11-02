@@ -34,8 +34,8 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 3- Create a new branch before you make any single change <br><br>
 4- Make sure to push your work in small changes rather than doing all of it in one large change <br><br>
 5- Our Communication should be as much as possible through GitHub so that we document every single thing in time  <br><br>
-6- Add a clear description to anything you do <br><br>
-7- Choose good and descriptive names/titles for you branches' names, pull request titles <br><br>
+6- <strong>Add a clear description to anything you do</strong> <br><br>
+7- <strong>Choose good and descriptive names/titles for you branches' names, pull request titles</strong> <br><br>
 8- Feel free to send me a WhatsApp message and I will respond as soon as I can  <br><br>
 
 # Branches Map 
