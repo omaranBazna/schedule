@@ -5,10 +5,10 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 
 # How to use GitHub for team management
 
-*Make sure all team members have access to the repo and are added as collaborators. You can add people directly when creating the repo or invite them later.
-*Use GitHub issues to track tasks, bugs, ideas, etc. Issues are a great way for team members to communicate and collaborate.
-*Use pull requests for code reviews. Require team members to submit PRs rather than pushing directly to master. This allows you to review code changes before they are merged.
-*Communicate frequently as a team on progress, what's next, blockers, etc. GitHub facilitates transparency.
+1- Make sure all team members have access to the repo and are added as collaborators. You can add people directly when creating the repo or invite them later.<br><br>
+2- Use GitHub issues to track tasks, bugs, ideas, etc. Issues are a great way for team members to communicate and collaborate.<br><br>
+3- Use pull requests for code reviews. Require team members to submit PRs rather than pushing directly to master. This allows you to review code changes before they are merged.<br><br>
+4- Communicate frequently as a team on progress, what's next, blockers, etc. GitHub facilitates transparency.<br><br>
 
 # Working rules:
 
