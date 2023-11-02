@@ -10,7 +10,12 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 3- Use pull requests for code reviews. Require team members to submit PRs rather than pushing directly to master. This allows you to review code changes before they are merged.<br><br>
 4- Communicate frequently as a team on progress, what's next, blockers, etc. GitHub facilitates transparency.<br><br>
 
-# Working rules:
+# Working rule:
+
+
+
+# Sprint:
+
 
 ## Process steps: 
 
