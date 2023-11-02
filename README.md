@@ -1,3 +1,6 @@
-# schedule app for detroit mercy 
+# Schedule app for Detroit Mercy 
 
-This app created to help UDM mercy for schedule the classes in Engineering department
+This app was created to help UDM Mercy for schedule the classes in Engineering department
+
+
+# Branches Map 
