@@ -31,7 +31,7 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 
 1- make sure to read the issue description carefully  <br><br>
 2- you are allowed to create issues if you think there is something missing   <br><br>
-3- Create a new branch before you make any single change <br><br>
+3- Create a new branch before you make per changes <br><br>
 4- Make sure to push your work in small changes rather than doing all of it in one large change <br><br>
 5- Our Communication should be as much as possible through GitHub so that we document every single thing in time  <br><br>
 6- <strong>Add a clear description to anything you do</strong> <br><br>
