@@ -23,6 +23,11 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 7- You do the changes on your local Visual Code Editor <br><br>
 8- push the changes again and so on <br><br>
 9- I will accept the "pull request" so the branch will be merged into the target branch <br><br>
+10- We keep doing this until all sprint issues resolved <br>
+
+
+## General rules:
+
 
 
 
