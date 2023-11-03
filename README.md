@@ -77,7 +77,7 @@ git push origin <branch_name>
 ```
 # How to contribute:
 
-[Explanation for first-time usage](https://youtu.be/qBZSC-qa1z4)
+[Explanation for first-time usage](https://youtu.be/qBZSC-qa1z4) <br><br>
 [Explanation for contribute next times](https://youtu.be/gxapDt3uuAM)
 
 # Branches Map 
