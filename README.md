@@ -72,7 +72,7 @@ git push origin <branch_name>
 ```
 # How to contribute:
 
-[![Watch the video][https://youtu.be/qBZSC-qa1z4]
+[Explanation](https://youtu.be/qBZSC-qa1z4)
 
 # Branches Map 
 https://drive.google.com/file/d/1rGzR8xYTPfmXAJHsi8H0P4W3NeOfKRvu/view?usp=sharing
