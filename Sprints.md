@@ -1,6 +1,6 @@
 # Sprints
 
-## Sprint1: System design (2 weeks)
+## Sprint1: System design (1 weeks)
 1- Front End System design  -- jeet <br><br>
 2- Back End System design  -- Raya <br><br>
 3- Database System design -- Rami <br><br>
