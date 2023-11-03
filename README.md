@@ -2,7 +2,6 @@
 
 This app was created to help UDM Mercy for schedule the classes in Engineering department
 
-# Useful command:
 # How to use GitHub for team management
 
 1- Make sure all team members have access to the repo and are added as collaborators. You can add people directly when creating the repo or invite them later.<br><br>
@@ -11,12 +10,6 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 4- Communicate frequently as a team on progress, what's next, blockers, etc. GitHub facilitates transparency.<br><br>
 
 # Working rule:
-
-
-
-# Sprint:
-
-
 ## Process steps: 
 
 1- Every sprint I will open a set of issues for the sprint, along with a brief description <br><br>
@@ -33,7 +26,6 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 
 ## General rules:
 
-
 1- make sure to read the issue description carefully  <br><br>
 2- you are allowed to create issues if you think there is something missing   <br><br>
 3- Create a new branch before you make changes <br><br>
@@ -43,7 +35,41 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 7- <strong>Choose good and descriptive names/titles for you branches' names, pull request titles</strong> <br><br>
 8- Feel free to send me a WhatsApp message and I will respond as soon as I can  <br><br>
 
-# Current Blackboard due
+# Current Sprint :
+System design 
+
+# Current Branch :
+System design 
+
+# Current Blackboard due:
+
+# Useful GitHub Commands:
+Clone a repo:
+```
+git clone <repo_url>
+```
+
+Pull changes from a branch:
+```
+git pull origin <branch_name>
+
+```
+Create a new branch:
+```
+git branch <new_branch_name>
+```
+Move to a new branch:
+```
+git checkout <new_branch_name>
+```
+Check the current branch:
+```
+git branch
+````
+Push changes:
+```
+git push origin <branch_name>
+```
 
 # Branches Map 
 https://drive.google.com/file/d/1rGzR8xYTPfmXAJHsi8H0P4W3NeOfKRvu/view?usp=sharing
