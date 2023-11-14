@@ -82,7 +82,8 @@ git push origin <branch_name>
 
 # Branches Map 
 https://drive.google.com/file/d/1rGzR8xYTPfmXAJHsi8H0P4W3NeOfKRvu/view?usp=sharing
-![Branches_map drawio](https://github.com/omaranBazna/schedule/assets/100542103/503c99a7-a119-4c90-af1b-7b99eb433cbb)
+![Branches_map drawio (1)](https://github.com/omaranBazna/schedule/assets/100542103/8d09eb3c-d21f-4990-8bcd-d40a12e37bae)
+
 
 # Technical tools used:
 -Visual studio code <br><br>
