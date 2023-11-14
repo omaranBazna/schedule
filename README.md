@@ -41,10 +41,10 @@ This app was created to help UDM Mercy for schedule the classes in Engineering d
 9- Feel free to send me a WhatsApp message and I will respond as soon as I can  <br><br>
 
 # Current Sprint :
-System design 
+System development
 
 # Current Branch :
-System design 
+System development
 
 # Current Blackboard due:
 
