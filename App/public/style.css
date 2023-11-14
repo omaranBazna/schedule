@@ -1,0 +1,197 @@
+*{
+  box-sizing:border-box;
+}
+html{
+   background:#fff;
+}
+body{
+font-size:25px;
+  padding:20px;
+  font-family:arial;
+ 
+  color:#000000;
+ 
+
+}
+a{
+  color:inherit;
+  text-decoration:none;
+  transition:0.3s;
+}
+a:hover{
+  transform:translateY(-10px);
+  cursor:pointer;
+}
+body >h1,body>p{
+  text-align:center;
+}
+body > div{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  min-height:200px;
+  /*margin:40px;
+  gap:40px;*/
+}
+body>div>a{
+  border:2px solid #012972;
+  border-radius:10px;
+  padding:0px;
+  min-height:300px;
+  width:300px;
+  max-width:90%;
+  
+  
+}
+body>div>a >p {
+  padding:10px;
+  color:white;
+  font-size:17px;
+  text-align:center;
+  color:#012972;
+}
+body>div>a>*{
+  margin:0px;
+}
+body>div>a>h3{
+  text-align:center;
+  width:100%;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  padding:10px;
+  color:#012972;
+  text-align:center;
+}
+.add{
+  display:block;
+}
+.add h2{
+  text-align:center;
+}
+/*style input area*/
+.add body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.add label, .add select, .add input, .add button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add select, .add input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add button:hover {
+  background-color: #0056b3;
+} 
+
+/*style tables*/
+ table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: center;
+    background-color: #4e75a6;
+  }
+
+  th {
+    background-color: #0a3061;
+    color:#6B7280;
+  }
+
+  .edit-icon, .delete-icon {
+    cursor: pointer;
+  }
+
+/*style schadule*/
+ .schedule {
+    display: grid;
+    grid-template-columns: 100px repeat(5, 1fr);
+    grid-template-rows: 50px repeat(10, 1fr);
+    grid-gap: 1px;
+    border: 1px solid #ffffff;
+    margin: 20px;
+  }
+
+  .day-label, .time-label {
+    background-color: #a45656;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid #be0e0e;
+  }
+
+  .course-block {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 2px;
+  }
+
+  .course-details {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .dead-time {
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+  }
+
+/*style footer*/
+.return{
+  width:200px;
+  display:block;
+  padding:20px;
+  border:2px solid white;
+  background-color:#a7043a;
+  border-radius:20px;
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+/*written by sarabjeet*/
+.intro {display:block;text-align:center;}
+.intro h1{margin-top:0;}
+.intro p{font-size:20px;}
+.icon-feature{text-align:center;padding:10px;}
+.add label{font-size:17px;}
+.add select{margin-bottom:10px;}
+#description{height:40px;padding:5px;width:100%;}
+.add h2 {padding-bottom:20px;}
+tr.active td{background-color:#efefef;}
+table tbody tr td{background:#fff;color:#6B7280;padding:10px;text-align:center;}
+table tbody tr{border-bottom:1px solid #ccc;}
+table tbody tr th{background:#EAEAEA;padding:20px;text-align:center;}
+.pb20{padding-bottom:20px;}
+.pt20{padding-top:20px;}
+.fs30{font-size:30px !important;}
+body>div>a{text-decoration:none;}
+#specialNotes{width: 100%;padding: 10px;height: 41px;}
+.return{color:#fff;text-decoration:none;}
+a i {color:#000;font-size:35px;margin-top:30px;color:#012972;}
+.return:hover{color:#fff;}

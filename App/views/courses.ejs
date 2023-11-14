@@ -1,0 +1,215 @@
+<%- include('header') %> 
+
+
+<h1 class="pb20 fs30">View, Add, Update, and Delete Courses</h1>
+
+  <div class="row">
+      <div class="col-md-6">
+          <div class="dataTables_filter">
+              <label>
+                  Search:
+                  <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example">
+              </label>
+          </div>
+      </div>
+      <div class="col-md-6 text-right">
+          <button class="btn btn-success btn-sm" id="addCourseButton">Add Course</button>
+      </div>
+  </div>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+  <tr>
+    <th>Course Name</th>
+    <th>Course Code</th>
+    <th>Course Major</th>
+    <th>Professor</th>
+    <th>Credits</th>
+    <th>Year</th>
+    <th>Frequency</th>
+    <th>Duration</th>
+    <th>Type</th>
+    <th>Actions</th>
+  </tr>
+  <!-- Example courses for Computer Science -->
+  <tr>
+    <td>Introduction to Programming</td>
+    <td>CS101</td>
+    <td>Computer Science</td>
+    <td>Dr. Smith</td>
+    <td>3</td>
+    <td>1</td>
+    <td>Every Semester</td>
+    <td>16 weeks</td>
+    <td>In-person</td>
+    <td>
+      <span class="edit-icon">&#9998;</span>
+      <span class="delete-icon">&#128465;</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Data Structures and Algorithms</td>
+    <td>CS202</td>
+    <td>Computer Science</td>
+    <td>Dr. Johnson</td>
+    <td>4</td>
+    <td>2</td>
+    <td>Every Semester</td>
+    <td>16 weeks</td>
+    <td>Online</td>
+    <td>
+      <span class="edit-icon">&#9998;</span>
+      <span class="delete-icon">&#128465;</span>
+    </td>
+  </tr>
+  <!-- Example courses for Electrical Engineering -->
+  <tr class="active">
+    <td>Electromagnetism</td>
+    <td>EE301</td>
+    <td>Electrical Engineering</td>
+    <td>Dr. Williams</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Every Fall</td>
+    <td>15 weeks</td>
+    <td>In-person</td>
+    <td>
+      <span class="edit-icon">&#9998;</span>
+      <span class="delete-icon">&#128465;</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Microelectronics</td>
+    <td>EE401</td>
+    <td>Electrical Engineering</td>
+    <td>Dr. Davis</td>
+    <td>4</td>
+    <td>4</td>
+    <td>Every Spring</td>
+    <td>15 weeks</td>
+    <td>Online</td>
+    <td>
+      <span class="edit-icon">&#9998;</span>
+      <span class="delete-icon">&#128465;</span>
+    </td>
+  </tr>
+</table>
+  
+<div class="add">
+<h2 class="pb20 pt20">Add New Course</h2>
+  
+  <form>
+    <div class="row">
+      <div class="col">
+        <label for="courseCredits">Course Name</label>
+        <input type="number" id="courseCredits" class="add" placeholder="Enter course name" />
+      </div>
+      <div class="col">
+        <label for="courseMajor">Course Major</label>
+        <select id="courseMajor" class="add">
+          <option value="CS">Computer Science</option>
+          <option value="EE">Electrical Engineering</option>
+          <option value="Robotics">Robotics</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="courseCredits">Course Credits</label>
+        <input type="number" id="courseCredits" class="add" placeholder="Enter course credits" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="courseType">Course Type</label>
+        <select id="courseType" class="add">
+          <option value="online">Online (Synchronous)</option>
+          <option value="async">Online (Asynchronous)</option>
+          <option value="inPerson">In-person</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="hasLabs">Course Has Labs</label>
+        <select id="hasLabs" class="add">
+          <option value="online">No</option>
+          <option value="async">Yes</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="courseYear">Course Year</label>
+        <select id="courseYear" class="add">
+          <option value="freshman">Freshman</option>
+          <option value="sophomore">Sophomore</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="graduate">Graduate</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="courseDuration">Course Duration</label>
+        <input type="number" id="courseDuration" class="add" placeholder="Enter course duration" />
+      </div>
+      <div class="col">
+        <label for="courseCode">Course Code</label>
+        <input type="text" id="courseCode" class="add" placeholder="Enter course code" />
+      </div>
+
+      <div class="col">
+        <label for="professor">Professors List 1</label>
+        <input type="text" id="professor1" name="professor[]" class="add" placeholder="Enter professor name 1" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="professor">Professors List 2</label>
+        <input type="text" id="professor1" name="professor[]" class="add" placeholder="Enter professor name 2" />
+      </div>
+
+      <div class="col">
+        <label for="professor">Professors List 3</label>
+        <input type="text" id="professor1" name="professor[]" class="add" placeholder="Enter professor name 3" />
+      </div>
+
+      <div class="col">
+        <label for="professor">Professors List 4</label>
+        <input type="text" id="professor1" name="professor[]" class="add" placeholder="Enter professor name 4" />
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="endDate">End Date</label>
+          <input type="date" id="endDate" class="add" />
+        </div>
+
+        <div class="col">
+          <label for="description">Course description</label>
+          <textarea id="description" class="add" placeholder="Enter course description"></textarea>
+        </div>
+
+        <div class="col">
+          <label for="prerequisites">Prerequisites</label>
+          <input type="text" id="prerequisites" class="add" placeholder="Enter course prerequisites" />
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="location">Location</label>
+        <input type="text" id="location" class="add" placeholder="Enter course location" />
+      </div>
+      <div class="col">
+        <label>Frequency of Lectures</label>
+        <input type="number" id="lectureFrequency" class="add" placeholder="Enter lecture frequency" />
+      </div>
+      <div class="col">
+        <label for="additionalField1">Additional Field 1</label>
+        <input type="text" id="additionalField1" class="add" placeholder="Additional Field 1" />
+      </div>
+    </div>
+  </form>
+
+
+<button class="add">Submit</button>
+  </div>
+  <%- include('footer') %> 
+

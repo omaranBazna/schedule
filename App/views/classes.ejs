@@ -1,0 +1,140 @@
+<%- include('header') %> 
+
+
+<h1 class="pb20 fs30">List of  Avaibilities </h1>
+
+  <table>
+  <tr>
+    <th>Professor Name</th>
+    <th>Courses Available</th>
+    <th>Online</th>
+    <th>In-Person</th>
+    <th>Monday Availability</th>
+    <th>Tuesday Availability</th>
+    <th>Wednesday Availability</th>
+    <th>Thursday Availability</th>
+    <th>Friday Availability</th>
+    <th>Special Notes</th>
+  </tr>
+  <tr>
+    <td>Dr. Smith</td>
+    <td>CS101, CS202</td>
+    <td>M-F</td>
+    <td>Tu-Th</td>
+    <td>9am - 5pm</td>
+    <td>Not Available</td>
+    <td>9am - 12pm</td>
+    <td>1pm - 4pm</td>
+    <td>9am - 5pm</td>
+    <td>Needs advanced notice for online classes</td>
+  </tr>
+  <tr>
+    <td>Dr. Johnson</td>
+    <td>CS202</td>
+    <td>Tu-Th</td>
+    <td></td>
+    <td>Not Available</td>
+    <td>9am - 12pm</td>
+    <td>9am - 12pm</td>
+    <td></td>
+    <td>9am - 5pm</td>
+    <td></td>
+  </tr>
+  <tr class="active">
+    <td>Dr. Williams</td>
+    <td>EE301</td>
+    <td></td>
+    <td>M-F</td>
+    <td></td>
+    <td>9am - 12pm</td>
+    <td></td>
+    <td>1pm - 4pm</td>
+    <td></td>
+    <td>Available for consultations after class</td>
+  </tr>
+  <tr>
+    <td>Dr. Davis</td>
+    <td>EE401</td>
+    <td></td>
+    <td>M-F</td>
+    <td></td>
+    <td></td>
+    <td>9am - 12pm</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
+<div class="add">
+<h2 class="pb20 pt20">Add Professor Availability</h2>
+
+  <div class="row">
+    <div class="col">
+<label for="professorName">Professor Name</label>
+<input type="text" id="professorName" class="add" placeholder="Enter professor name" />
+    </div>
+
+    <div class="col">
+      <label for="coursesAvailable">Courses Available</label>
+      <input type="text" id="coursesAvailable" class="add" placeholder="Enter courses available" />
+    </div>
+
+    <div class="col">
+      <label for="onlineAvailability">Online Availability</label>
+      <input type="text" id="onlineAvailability" class="add" placeholder="Enter online availability" />
+    </div>
+    
+    </div>
+  <div class="row">
+    <div class="col">
+      <label for="inPersonAvailability">In-Person Availability</label>
+      <input type="text" id="inPersonAvailability" class="add" placeholder="Enter in-person availability" />
+    </div>
+
+    <div class="col">
+      <label for="inPersonAvailability">In-Person Availability</label>
+      <input type="text" id="inPersonAvailability" class="add" placeholder="Enter in-person availability" />
+    </div>
+
+    <div class="col">
+      <label for="mondayAvailability">Monday Availability</label>
+      <input type="text" id="mondayAvailability" class="add" placeholder="Enter Monday availability" />
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col">
+      <label for="tuesdayAvailability">Tuesday Availability</label>
+      <input type="text" id="tuesdayAvailability" class="add" placeholder="Enter Tuesday availability" />
+    </div>
+
+    <div class="col">
+      <label for="wednesdayAvailability">Wednesday Availability</label>
+      <input type="text" id="wednesdayAvailability" class="add" placeholder="Enter Wednesday availability" />
+    </div>
+
+    <div class="col">
+      <label for="thursdayAvailability">Thursday Availability</label>
+      <input type="text" id="thursdayAvailability" class="add" placeholder="Enter Thursday availability" />
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col">
+    <label for="fridayAvailability">Friday Availability</label>
+    <input type="text" id="fridayAvailability" class="add" placeholder="Enter Friday availability" />
+  </div>
+
+  <div class="col">
+    <label for="specialNotes">Special Notes</label>
+    <textarea id="specialNotes" class="add" placeholder="Enter special notes"></textarea>
+  </div>
+</div>
+
+<button class="add">Add Professor Availability</button>
+
+</div>
+  <%- include('footer') %> 
+
