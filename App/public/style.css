@@ -114,7 +114,7 @@ body>div>a>h3{
   }
 
   th {
-    background-color: #0a3061;
+    background-color: #fff !important;
     color:#6B7280;
   }
 
@@ -195,3 +195,6 @@ body>div>a{text-decoration:none;}
 .return{color:#fff;text-decoration:none;}
 a i {color:#000;font-size:35px;margin-top:30px;color:#012972;}
 .return:hover{color:#fff;}
+#example_wrapper{width: 100%;}
+.dropdown .dropdown-toggle{margin:5px;}
+.add-btn{margin: 5px 15px 5px 5px;}
