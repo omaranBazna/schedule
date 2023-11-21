@@ -1,231 +1,103 @@
-<%- include('header') %> 
+<%- include('header1') %> 
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialDate: '2023-01-12',
+      initialView: 'timeGridWeek',
+      nowIndicator: true,
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+      },
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      selectable: true,
+      selectMirror: true,
+      dayMaxEvents: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2023-01-01',
+        },
+        {
+          title: 'Long Event',
+          start: '2023-01-07',
+          end: '2023-01-10'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2023-01-09T16:00:00'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2023-01-16T16:00:00'
+        },
+        {
+          title: 'Conference',
+          start: '2023-01-11',
+          end: '2023-01-13'
+        },
+        {
+          title: 'Meeting',
+          start: '2023-01-12T10:30:00',
+          end: '2023-01-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2023-01-12T12:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2023-01-12T14:30:00'
+        },
+        {
+          title: 'Happy Hour',
+          start: '2023-01-12T17:30:00'
+        },
+        {
+          title: 'Dinner',
+          start: '2023-01-12T20:00:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2023-01-13T07:00:00',
+          eventColor: 'red'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2023-01-28'
+        }
+      ],
+      eventColor: '#378006'
+    });
+
+    calendar.render();
+  });
+
+</script>
+<style>
+
+  body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  #calendar {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+</style>
+<div id='calendar'></div>
 
 
-<div class="schedule">
-  <!-- Day Labels -->
-  <div class="day-label">Time</div>
-  <div class="day-label">Monday</div>
-  <div class="day-label">Tuesday</div>
-  <div class="day-label">Wednesday</div>
-  <div class="day-label">Thursday</div>
-  <div class="day-label">Friday</div>
-
-  <!-- Time Labels and Course Blocks -->
-  <div class="time-label">9:00 AM</div>
-  <div class="dead-time"></div>
-  <div class="cs-course course-block">
-    <div class="course-details">
-      <p>Course: CS101</p>
-      <p>Professor: Dr. Smith</p>
-    </div>
-  </div>
-  <div class="cs-course course-block">
-    <div class="course-details">
-      <p>Course: CS202</p>
-      <p>Professor: Dr. Johnson</p>
-    </div>
-  </div>
-  <div class="ee-course course-block">
-    <div class="course-details">
-      <p>Course: EE301</p>
-      <p>Professor: Dr. Williams</p>
-    </div>
-  </div>
-  <div class="ee-course course-block">
-    <div class="course-details">
-      <p>Course: EE401</p>
-      <p>Professor: Dr. Davis</p>
-    </div>
-  </div>
-
-  <div class="time-label">10:00 AM</div>
-  <div class="cs-course course-block">
-    <div class="course-details">
-      <p>Course: CS303</p>
-      <p>Professor: Dr. Smith</p>
-    </div>
-  </div>
-  <div class="cs-course course-block">
-    <div class="course-details">
-      <p>Course: CS404</p>
-      <p>Professor: Dr. Johnson</p>
-    </div>
-  </div>
-  <div class="ee-course course-block">
-    <div class="course-details">
-      <p>Course: EE501</p>
-      <p>Professor: Dr. Williams</p>
-    </div>
-  </div>
-  <div class="ee-course course-block">
-    <div class="course-details">
-      <p>Course: EE601</p>
-      <p>Professor: Dr. Davis</p>
-    </div>
-  </div>
-
-  <div class="time-label">11:00 AM</div>
-  <div class="cs-course course-block">
-    <div class="course-details">
-      <p>Course: CS505</p>
-      <p>Professor: Dr. Smith</p>
-    </div>
-  </div>
-  <div class="cs-course course-block">
-    <div class="course-details">
-      <p>Course: CS606</p>
-      <p>Professor: Dr. Johnson</p>
-    </div>
-  </div>
-  <div class="dead-time"></div>
-  <div class="dead-time"></div>
-  <div class="ee-course course-block">
-    <div class="course-details">
-      <p>Course: EE701</p>
-      <p>Professor: Dr. Davis</p>
-    </div>
-  </div>
-
-  <div class="time-label">12:00 PM</div>
-  <div class="cs-course course-block">
-    <div class="course-details">
-      <p>Course: CS707</p>
-      <p>Professor: Dr. Smith</p>
-    </div>
-  </div>
-  <div class="dead-time"></div>
-  <div class="ee-course course-block">
-    <div class="course-details">
-      <p>Course: EE801</p>
-      <p>Professor: Dr. Williams</p>
-    </div>
-  </div>
-  <div class="ee-course course-block">
-    <div class="course-details">
-      <p>Course: EE901</p>
-      <p>Professor: Dr. Davis</p>
-    </div>
-  </div>
-  <div class="dead-time"></div>
-
-  <div class="time-label">1:00 PM</div>
-<div class="cs-course course-block">
-  <div class="course-details">
-    <p>Course: CS808</p>
-    <p>Professor: Dr. Smith</p>
-  </div>
-</div>
-<div class="dead-time"></div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE902</p>
-    <p>Professor: Dr. Williams</p>
-  </div>
-</div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1001</p>
-    <p>Professor: Dr. Davis</p>
-  </div>
-</div>
-<div class="dead-time"></div>
-
-<div class="time-label">2:00 PM</div>
-<div class="cs-course course-block">
-  <div class="course-details">
-    <p>Course: CS909</p>
-    <p>Professor: Dr. Smith</p>
-  </div>
-</div>
-<div class="cs-course course-block">
-  <div class="course-details">
-    <p>Course: CS1010</p>
-    <p>Professor: Dr. Johnson</p>
-  </div>
-</div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1003</p>
-    <p>Professor: Dr. Williams</p>
-  </div>
-</div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1005</p>
-    <p>Professor: Dr. Davis</p>
-  </div>
-</div>
-
-<div class="time-label">3:00 PM</div>
-<div class="cs-course course-block">
-  <div class="course-details">
-    <p>Course: CS1012</p>
-    <p>Professor: Dr. Smith</p>
-  </div>
-</div>
-<div class="cs-course course-block">
-  <div class="course-details">
-    <p>Course: CS1014</p>
-    <p>Professor: Dr. Johnson</p>
-  </div>
-</div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1007</p>
-    <p>Professor: Dr. Williams</p>
-  </div>
-</div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1009</p>
-    <p>Professor: Dr. Davis</p>
-  </div>
-</div>
-
-<div class="time-label">4:00 PM</div>
-<div class="dead-time"></div>
-<div class="cs-course course-block">
-  <div class="course-details">
-    <p>Course: CS1016</p>
-    <p>Professor: Dr. Smith</p>
-  </div>
-</div>
-<div class="dead-time"></div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1011</p>
-    <p>Professor: Dr. Williams</p>
-  </div>
-</div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1013</p>
-    <p>Professor: Dr. Davis</p>
-  </div>
-</div>
-<div class="dead-time"></div>
-
-<div class="time-label">5:00 PM</div>
-<div class="dead-time"></div>
-<div class="cs-course course-block">
-  <div class="course-details">
-    <p>Course: CS1018</p>
-    <p>Professor: Dr. Johnson</p>
-  </div>
-</div>
-<div class="dead-time"></div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1015</p>
-    <p>Professor: Dr. Williams</p>
-  </div>
-</div>
-<div class="ee-course course-block">
-  <div class="course-details">
-    <p>Course: EE1017</p>
-    <p>Professor: Dr. Davis</p>
-  </div>
-</div>
-<div class="dead-time"></div>
-</div>
 <%- include('footer') %> 
