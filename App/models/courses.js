@@ -114,4 +114,5 @@ function getCourses(req,res){
 
 module.exports = {
   renderPage,
+  getCourses
 };
