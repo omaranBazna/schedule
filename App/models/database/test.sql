@@ -21,11 +21,11 @@ CREATE TABLE  course (
 CREATE TABLE availability (
     Ava_ID INTEGER PRIMARY KEY AUTOINCREMENT,
     Availability_Duration TEXT NOT NULL,
-    Availability_Type BOOLEAN NOT NULL, 
-    FOREIGN KEY (Prof_ID) REFERENCES professor(Professor_ID),
-    FOREIGN KEY (Cour_ID) REFERENCES course(Course_ID),
-    FOREIGN KEY (TSlot_ID) REFERENCES time_slot(Time_Slot_ID)
-  )
+    Availability_Type BOOLEAN NOT NULL,
+    Prof_ID INTEGER, 
+    Cour_ID INTEGER,
+    TSlot_ID INTEGER
+);
 
 CREATE TABLE Time_Slot (
       Time_Slot_ID INTEGER PRIMARY KEY AUTOINCREMENT,
