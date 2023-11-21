@@ -15,10 +15,10 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
-app.use("/classes", require("./controllers/classes"));
+app.use("/classes", require("./controllers/availabilities"));
 app.use("/courses", require("./controllers/courses"));
 app.use("/professors", require("./controllers/professors"));
-app.use("/spaces", require("./controllers/spaces"));
+app.use("/availabilities", require("./controllers/availabilities"));
 app.use("/schedule", require("./controllers/schedule"));
 
 app.listen(port, () => {
