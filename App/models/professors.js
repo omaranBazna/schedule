@@ -13,7 +13,7 @@ let db = new sqlite3.Database(dbPath, (err) => {
 // Function to add a new professor
 function addProfessor(req, res) {
   let { fname, lname, type, seniority } = req.body;
-  const sql = `INSERT INTO professor (Fname, Lname, Professor_Type, Seniority) VALUES (rami, n, full time, 2)`;
+  const sql = `INSERT INTO professor (Fname, Lname, Professor_Type, Seniority) VALUES (?,?,?,?)`;
   db.run(sql, [fname, lname, type, seniority], function (err) {
     if (err) {
       return res.send(err.message);
@@ -48,7 +48,7 @@ function deleteProfessor(ProfessorID) {
   });
 }
 
-function getProfessors() {
+function getProfessors(req, res) {
   const sql = `select * from professor`;
   db.run(sql, function (err, rows) {
     if (err) {
