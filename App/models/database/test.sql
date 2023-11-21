@@ -16,8 +16,8 @@ CREATE TABLE  course (
     Elective BOOLEAN NOT NULL,
     Course_Iteration_Weekly INTEGER NOT NULL,
     Course_Duration TEXT NOT NULL,
-    Course_Year INTEGER NOT NULL,
-  )
+    Course_Year INTEGER NOT NULL
+  );
 CREATE TABLE availability (
     Ava_ID INTEGER PRIMARY KEY AUTOINCREMENT,
     Availability_Duration TEXT NOT NULL,

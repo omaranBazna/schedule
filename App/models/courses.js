@@ -98,7 +98,20 @@ function deleteCourse(CourseID) {
   });
 }
 
-// Example if need:
-//addCourse('EE', 'ML', '5050', 'In-person', false, 2, '1:50 hr', greduate, false);
-// updateCourse(EE, 'ML', '5053', 'In-person', false, 2, '1:50 hr', greduate, false);
-// deleteCourse(1);
+function renderPage(req, res) {
+  res.render("courses");
+}
+
+function getCourses(req,res){
+  const sql = `select * from professor`;
+  db.run(sql, function (err, rows) {
+    if (err) {
+      return res.send(err.message);
+    }
+    res.send({ rows });
+  });
+}
+
+module.exports = {
+  renderPage,
+};
