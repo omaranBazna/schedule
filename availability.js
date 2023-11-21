@@ -3,9 +3,6 @@
 // Create the availability table
 db.run(`CREATE TABLE IF NOT EXISTS availability (
     Ava_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-    Prof_ID INTEGER NOT NULL,
-    Cour_ID INTEGER NOT NULL,
-    TSlot_ID INTEGER NOT NULL,
     Professor_Ava DATETIME NOT NULL,
     Availability_Type BOOLEAN NOT NULL, 
     FOREIGN KEY (Prof_ID) REFERENCES professor(Professor_ID),
