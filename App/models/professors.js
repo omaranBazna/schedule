@@ -11,13 +11,14 @@ let db = new sqlite3.Database(dbPath, (err) => {
 });
 
 // Function to add a new professor
-function addProfessor(Fname, Lname, Professor_Type, Seniority) {
+function addProfessor(req, res) {
+  let { fname, lname, type, seniority } = req.body;
   const sql = `INSERT INTO professor (Fname, Lname, Professor_Type, Seniority) VALUES (rami, n, full time, 2)`;
-  db.run(sql, [Fname, Lname, Professor_Type, Seniority], function (err) {
+  db.run(sql, [fname, lname, type, seniority], function (err) {
     if (err) {
-      return console.error(err.message);
+      return res.send(err.message);
     }
-    console.log(`A row has been inserted with rowid ${this.lastID}`);
+    res.end();
   });
 }
 
@@ -47,22 +48,22 @@ function deleteProfessor(ProfessorID) {
   });
 }
 
-// Example usage:
-addProfessor("John", "Doe", "Full-Time", 5);
-// updateProfessor(1, 'Jane', 'Smith', 'Part-Time', 3);
-// deleteProfessor(1);
-
-// Close the database connection
-db.close((err) => {
-  if (err) {
-    console.error(err.message);
-  }
-  console.log("Closed the database connection.");
-});
-
+function getProfessors() {
+  const sql = `select * from professor`;
+  db.run(sql, function (err, rows) {
+    if (err) {
+      return res.send(err.message);
+    }
+    res.send({ rows });
+  });
+}
 function renderPage(req, res) {
   res.render("professors");
 }
 module.exports = {
   renderPage,
+  getProfessors,
+  updateProfessor,
+  deleteProfessor,
+  addProfessor,
 };
