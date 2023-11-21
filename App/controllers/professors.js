@@ -1,8 +1,7 @@
-const express=require("express")
-const router=express.Router();
-const Model=require("../models/professors")
+const express = require("express");
+const router = express.Router();
+const Model = require("../models/professors");
 
-router.get("/",Model.getProfessorsPage)
+router.get("/", Model.renderPage);
 
-
-module.exports=router
+module.exports = router;
