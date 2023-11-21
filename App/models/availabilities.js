@@ -1,3 +1,15 @@
+const sqlite3 = require("sqlite3").verbose();
+const path = require("path");
+
+const dbPath = path.join(__dirname, "database", "sql-server", "database.db");
+
+let db = new sqlite3.Database(dbPath, (err) => {
+  if (err) {
+    console.error(err.message);
+  }
+  console.log("Connected to the SQLite database.");
+});
+
 function renderPage(req, res) {
   res.render("availabilities");
 }
@@ -16,6 +28,8 @@ function addAvailability(req, res) {
     Cour_ID,
     TSlot_ID,
   ];
+
+  return res.send(data);
 
   // Run insert statement
   db.run(sql, data, function (err) {
