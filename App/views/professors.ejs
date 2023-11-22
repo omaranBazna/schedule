@@ -15,121 +15,36 @@
             <form>
               <div class="row">
                 <div class="col">
-                  <label for="courseCredits">Course ID</label>
-                  <input type="number" id="courseCredits" class="add" placeholder="Enter course ID" />
+                  <label for="firstName">Professor First Name</label>
+                  <input type="number" id="firstName" class="add" placeholder="Enter First Name" />
                 </div>
                 <div class="col">
-                  <label for="courseCredits">Course Name</label>
-                  <input type="number" id="courseCredits" class="add" placeholder="Enter course name" />
+                  <label for="lastName">Professor Last Name</label>
+                  <input type="number" id="lastName" class="add" placeholder="Enter Last Name" />
                 </div>
                 <div class="col">
-                  <label for="courseMajor">Course Major</label>
+                  <label for="courseMajor">Type</label>
                   <select id="courseMajor" class="add">
-                    <option value="CS">Computer Science</option>
-                    <option value="EE">Electrical Engineering</option>
-                    <option value="Robotics">Robotics</option>
+                    <option value="F>Full-Time</option>
+                    <option value="EE">Edjacentgineering</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="seniority">Seniority</label>
+                  <select id="seniority" class="add">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10+">10+</option>
                   </select>
                 </div>
               </div>
-              <div class="row">
-                <div class="col">
-                  <label for="courseType">Course Type</label>
-                  <select id="courseType" class="add">
-                    <option value="online">Online (Synchronous)</option>
-                    <option value="async">Online (Asynchronous)</option>
-                    <option value="inPerson">In-person</option>
-                  </select>
-                </div>
-                <div class="col">
-                  <label for="courseCredits">Course Code</label>
-                  <input type="number" id="courseCredits" class="add" placeholder="course code" />
-                </div>
-                <div class="col">
-                  <label for="hasLabs">Course Level</label>
-                  <select id="hasLabs" class="add">
-                    <option value="Freshman">Freshman</option>
-                  </select>
-                </div>
-                
-              </div>
-              <div class="row">
-                <div class="col">
-                  <label for="courseYear">Course Duration</label>
-                  <input type="number" id="courseCredits" class="add" placeholder="Enter course duration" />
-                </div>
-                <div class="col">
-                  <label for="courseDuration">Frequency of Lectures</label>
-                  <input type="number" id="courseDuration" class="add" placeholder="Enter frequency" />
-                </div>
-                <div class="col">
-                  <label for="courseCode">Course Credits</label>
-                  <input type="text" id="courseCode" class="add" placeholder="Enter course credits" />
-                </div>
-          
-                
-              </div>
-          
-              <div class="row">
-                <div class="col">
-                  <label for="professor">Elective</label>
-                  <select id="hasLabs" class="add">
-                    <option value="No">No</option>
-                  </select>
-                </div>
-                <div class="col">
-                  <label for="professor">Course has labs</label>
-                  <select id="hasLabs" class="add">
-                    <option value="Yes">yes</option>
-                    <option value="No">No</option>
-                  </select>
-                </div>
-          
-                <div class="col">
-                  <label for="professor">Course Year</label>
-                  <input type="text" id="professor1" name="professor[]" class="add" placeholder="Enter course year" />
-                </div>
-                
-               
-                
-              </div>
-          
-              <div class="row">
-                <div class="col">
-                  <label for="professor">Course Description</label>
-                  <input type="text" id="professor1" name="professor[]" class="add" placeholder="Enter course Description" />
-                </div>
-                <div class="col">
-                  <label for="professor">Course Days</label>
-                  <input type="text" id="professor1" name="professor[]" class="add" placeholder="Enter days" />
-                </div>
-
-                <div class="col">
-                  <label for="endDate">Location</label>
-                  <select id="hasLabs" class="add">
-                    <option value="location1">Location 1</option>
-                    <option value="location2">Location 2</option>
-                  </select>
-                </div>
-        
-                
-              </div>
-
-                <div class="row">
-                  
-                  <div class="col">
-                    <label for="description">Start Time</label>
-                    <input type="datetime" class="add" placeholder="Enter start time"></textarea>
-                  </div>
-                  <div class="col">
-                    <label for="description">End Time</label>
-                    <input type="datetime" class="add" placeholder="Enter end time"></textarea>
-                  </div>
-          
-                  <div class="col">
-                    <label for="prerequisites">Prerequisites</label>
-                    <input type="text" id="prerequisites" class="add" placeholder="Enter course prerequisites" />
-                  </div>
-                </div>
           
     
             </form>
@@ -150,12 +65,12 @@
     
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-        Frequency
+        Professor Name
       </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Every Semester</a>
-        <a class="dropdown-item" href="#">Every Fall</a>
-        <a class="dropdown-item" href="#">Every Spring</a>
+        <a class="dropdown-item" href="#">Dr. Mina</a>
+        <a class="dropdown-item" href="#">Dr. Shadi Bani</a>
+        <a class="dropdown-item" href="#">Dr. Mariam</a>
       </div>
     </div>
 
@@ -164,9 +79,9 @@
         Type
       </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">In-Person</a>
-        <a class="dropdown-item" href="#">Online</a>
-        <a class="dropdown-item" href="#">Hybrid</a>
+        <a class="dropdown-item" href="#" onclick="handleClick(this)">In-Person</a>
+        <a class="dropdown-item" href="#" onclick="handleClick(this)">Online</a>
+        <a class="dropdown-item" href="#" onclick="handleClick(this)">Hybrid</a>
       </div>
     </div>
 
@@ -178,38 +93,26 @@
   <table id="example" class="table table-striped table-bordered" style="width:100%">
       <thead>
           <tr>
-            <th>Course Name</th>
-            <th>Course Code</th>
-            <th>Course Major</th>
-            <th>Credits</th>
-            <th>Frequency</th>
-            <th>Duration</th>
+            <th>Professor Name</th>
             <th>Type</th>
+            <th>Seniority</th>
             <th>Actions</th>
           </tr>
       </thead>
       <tbody>
           <tr>
-            <td>Introduction to Programming</td>
-            <td>CS101</td>
-            <td>Computer Science</td>
-            <td>3</td>
-            <td>Every Semester</td>
-            <td>16 weeks</td>
-            <td>In-person</td>
+            <td>Dr. Mina</td>
+            <td>Full-time</td>
+            <td>5</td>
             <td>
               <span class="edit-icon">&#9998;</span>
               <span class="delete-icon">&#128465;</span>
             </td>
           </tr>
           <tr>
-            <td>Data Structures and Algorithms</td>
-            <td>CS202</td>
-            <td>Computer Science</td>
-            <td>4</td>
-            <td>Every Semester</td>
-            <td>16 weeks</td>
-            <td>Online</td>
+            <td>Dr. Mina</td>
+            <td>Adjacent</td>
+            <td>3</td>
             <td>
               <span class="edit-icon">&#9998;</span>
               <span class="delete-icon">&#128465;</span>
@@ -226,12 +129,17 @@
       $('#example').DataTable();
   });
 
-  // Add your JavaScript code for handling the "Add Course" button here
-  $('#addCourseButton').click(function() {
-      // You can add code to open a modal or perform other actions when the button is clicked.
-      alert('Add Course button clicked');
-  });
+  let clickedText = '';
+
+  // Function to handle the click event
+  function handleClick(element) {
+    // Get the text content of the clicked anchor tag
+    clickedText = element.textContent;
+
+    // Display the text content in the console (you can do something else with it)
+    console.log('Clicked Text:', clickedText);
+    document.getElementById('example_filter').querySelector('[aria-controls="example"]').value = clickedText;
+  }
 </script>
 
 <%- include('footer') %> 
-

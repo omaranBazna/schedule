@@ -16,17 +16,23 @@
               <div class="row">
                 <div class="col">
                   <label for="professor">Professor</label>
+                  
                   <select name="Prof_ID" id="professor" class="add">
-                    <option  value="1">Dr. Shadi Ban</option>
-                    <option value="2">Dr. Johnson</option>
+                    <% for(var i=0; i<prof.length; i++) {%>
+
+                    <option  value=<%=prof[i].ProfessorID %> ><%=prof[i].Fname%> <%=prof[i].Lname%></option>
+                
+                     <%}%>
                   </select>
                 </div>
 
                 <div class="col">
                   <label for="professor">Course</label>
                   <select name="Cour_ID"  id="professor" class="add">
-                    <option value="1">Software Engineering</option>
-                    <option value="2">Information Systems</option>
+                    <% for(var i=0; i<course.length; i++) {%>
+                      <option  value=<%=course[i].CourseID %>> <%=course[i].Course_Name%> <%=course[i].Course_Code%></option>
+                  
+                       <%}%>
                   </select>
                 </div>
 
@@ -122,23 +128,26 @@
           <tr>
             <th>Professor Name</th>
             <th>Course</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
+             <th>Day</th>
+             <th>Time</th>
+            <th>Duration</th>
+            <th>Type</th>
           </tr>
       </thead>
       <tbody>
-          <tr>
-            <td>Dr. Smith</td>
-            <td>CS101</td>
-            <td>M-F</td>
-            <td>Tu-Th</td>
-            <td>9am - 5pm</td>
-            <td>Not Available</td>
-            <td>9am - 12pm</td>
+        
+        <% for(var i=0; i<rows.length; i++) {%>
+        <tr>
+            <td><%=rows[i].Prof_ID%></td>
+            <td><%=rows[i].Cour_ID%></td>
+            <td><%=rows[i].TSlot_ID%></td>
+            <td><%=rows[i].TSlot_ID%></td>
+            <td><%=rows[i].Availability_Duration%></td>
+            <td><%=rows[i].Availability_Type%></td>
           </tr>
+       <% } %>
+          
+       <!--
           <tr>
             <td>Dr. Johnson</td>
             <td>CS202</td>
@@ -156,7 +165,7 @@
             <td>1pm - 4pm</td>
             <td>9am - 12pm</td>
             <td>1pm - 4pm</td>
-          </tr>
+          </tr>-->
           <!-- Add more rows as needed -->
       </tbody>
   </table>
