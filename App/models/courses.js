@@ -16,16 +16,19 @@ let db = new sqlite3.Database(
 );
 
 // Function to add a new course
-function addCourse(req,res) {
-  let {Major,
+function addCourse(req, res) {
+  let {
+    Major,
     Course_Name,
     Course_Code,
     Course_Type,
     Elective,
     Course_Iteration_Weekly,
     Course_Duration,
-    Course_Year}=req.body
-  const sql = `INSERT INTO course (Major, Course_Name, Course_Code, Course_Type, Elective, Course_Iteration_Weekly, Course_Duration, Course_Year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+    Course_Year,
+  } = req.body;
+  console.log(req.body);
+  const sql = `INSERT INTO course (Major, Course_Name, Course_Code, Course_Type, Elective, Course_Iteration_Weekly, Course_Duration, Course_Year) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
   db.run(
     sql,
     [
@@ -37,8 +40,8 @@ function addCourse(req,res) {
       Course_Iteration_Weekly,
       Course_Duration,
       Course_Year,
-   
     ],
+
     function (err) {
       if (err) {
         return res.send(err.message);
@@ -60,5 +63,5 @@ function renderPage(req, res) {
 
 module.exports = {
   renderPage,
-  addCourse
+  addCourse,
 };
