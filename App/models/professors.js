@@ -18,7 +18,7 @@ function addProfessor(req, res) {
     if (err) {
       return res.send(err.message);
     }
-    res.end();
+    res.redirect("/");
   });
 }
 

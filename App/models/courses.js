@@ -110,5 +110,4 @@ function renderPage(req, res) {
 
 module.exports = {
   renderPage,
-  getCourses,
 };

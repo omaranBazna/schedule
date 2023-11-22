@@ -43,15 +43,22 @@
                 </div>
 
                 <div class="col">
-                  <label for="courseLevel">Course Level</label>
+                  <label for="courseLevel">Is Elective</label>
                   <select id="courseLevel" class="add">
-                    <option value="Freshman">Freshman</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
                   </select>
                 </div>
 
                 <div class="col">
                   <label for="CourseYear">Course Year</label>
-                  <input type="text" id="CourseYear" name="professor[]" class="add" placeholder="Enter course year" />
+                  <select id="courseDuration" class="add">
+                    <option value="Monday">Freshman</option>
+                    <option value="Tuesday">First Year</option>
+                    <option value="Wednesday">Second Year</option>
+                    <option value="Wednesday">Junior</option>
+                    <option value="Wednesday">Graduate</option>
+                  </select>
                 </div>
                 
               </div>
@@ -120,13 +127,15 @@
             <th>Course Name</th>
             <th>Course Code</th>
             <th>Course Type</th>
-          
+            <th>Is elective</th>
+            <th>Freq per week</th>
+            <th>Duration</th>
+            <th>Course Year</th>
           </tr>
       </thead>
       
      
-    
-     
+   
 
       <tbody>
         <% for(let i=0;i<rows.length;i++) {%>
@@ -134,7 +143,10 @@
            <td><%=rows[i].Course_Name%> </td>
            <td><%=rows[i].Course_Code%> </td>
            <td><%=rows[i].Course_Type%> </td>
-
+           <td><%=rows[i].Elective%> </td>
+           <td><%=rows[i].Course_Iteration_Weekly%> </td>
+           <td><%=rows[i].Course_Duration%> </td>
+           <td><%=rows[i].Course_Year%> </td>
 
          
           </tr>
