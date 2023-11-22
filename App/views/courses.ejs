@@ -89,8 +89,6 @@
                   <input type="text" id="professor1" name="professor[]" class="add" placeholder="Enter course year" />
                 </div>
                 
-               
-                
               </div>
           
               <div class="row">
@@ -163,10 +161,10 @@
       <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
         Type
       </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">In-Person</a>
-        <a class="dropdown-item" href="#">Online</a>
-        <a class="dropdown-item" href="#">Hybrid</a>
+      <div id="filter" class="dropdown-menu">
+        <option class="dropdown-item" id="inperson">In-Person</option>
+        <option class="dropdown-item" id="online">Online</option>
+        <option class="dropdown-item" id="hybird">Hybrid</option>
       </div>
     </div>
 
@@ -223,7 +221,18 @@
 <script>
   // Initialize DataTable
   $(document).ready(function() {
-      $('#example').DataTable();
+      let table =$('#example').DataTable();
+       
+      $("#inperson").click(function(){
+        let filterValue = this.id; // get data value 
+        console.log(filterValue)
+console.log(table.column(2))
+console.log(table.column(6)
+  .data()
+  .filter( value => value === filterValue )).draw()// filter by data value
+  
+  })
+
   });
 
   // Add your JavaScript code for handling the "Add Course" button here
@@ -231,6 +240,9 @@
       // You can add code to open a modal or perform other actions when the button is clicked.
       alert('Add Course button clicked');
   });
+
+ 
+  
 </script>
 
 <%- include('footer') %> 
