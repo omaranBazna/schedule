@@ -1,3 +1,5 @@
+const slots = require("../utils/slots.js");
+
 const sqlite3 = require("sqlite3").verbose();
 const path = require("path");
 

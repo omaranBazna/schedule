@@ -1,4 +1,4 @@
-let slots = [
+export const slots = [
   { id: 1, day: "Monday", time: "08:00 AM" },
   { id: 2, day: "Monday", time: "08:15 AM" },
   { id: 3, day: "Monday", time: "08:30 AM" },
