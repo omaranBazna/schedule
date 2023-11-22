@@ -103,7 +103,6 @@ function addAvailability(req, res) {
   let sql = `INSERT INTO availability (Availability_Duration, Availability_Type, Prof_ID, Cour_ID, TSlot_ID)
               VALUES (?, ?, ?, ?, ?)`;
 
-  // Example data
   let data = [
     Availability_Duration,
     Availability_Type,
@@ -112,12 +111,11 @@ function addAvailability(req, res) {
     TSlot_ID,
   ];
 
-  // Run insert statement
   db.run(sql, data, function (err) {
     if (err) {
       console.error(err.message);
     }
-    res.end();
+    res.redirect("/classes");
   });
 }
 
