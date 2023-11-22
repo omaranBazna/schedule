@@ -26,7 +26,10 @@ function addAvailability(req, res) {
     day,
   } = req.body;
   console.log(slots);
-  return res.send(req.body);
+  let element = slots.find(
+    (item) => item.day.indexOf(day) > -1 && item.time.indexOf(time) > -1
+  );
+  let TSlot_ID = element.id;
 
   let sql = `INSERT INTO availability (Availability_Duration, Availability_Type, Prof_ID, Cour_ID, TSlot_ID)
               VALUES (?, ?, ?, ?, ?)`;
@@ -39,8 +42,6 @@ function addAvailability(req, res) {
     Cour_ID,
     TSlot_ID,
   ];
-
-  return res.send(data);
 
   // Run insert statement
   db.run(sql, data, function (err) {
