@@ -11,24 +11,28 @@
         </button>
       </div>
       <div class="modal-body">
+    
+
+      
+   
         <div class="add">            
-            <form>
+            <form action="/courses" method="post">
               <div class="row">
                 <div class="col">
                   <label for="courseName">Course Name</label>
-                  <input type="text" id="courseName" class="add" placeholder="Enter course name" />
+                  <input name=" Course_Name" type="text" id="courseName" class="add" placeholder="Enter course name" />
                 </div>
                 <div class="col">
                   <label for="courseMajor">Course Major</label>
-                  <select id="courseMajor" class="add">
+                  <select name=" Major" id="courseMajor" class="add">
                     <option value="CS">Computer Science</option>
                     <option value="EE">Electrical Engineering</option>
                     <option value="Robotics">Robotics</option>
                   </select>
                 </div>
                 <div class="col">
-                  <label for="courseType">Course Type</label>
-                  <select id="courseType" class="add">
+                  <label  for="courseType">Course Type</label>
+                  <select name="Course_Type" id="courseType" class="add">
                     <option value="online">Online (Synchronous)</option>
                     <option value="async">Online (Asynchronous)</option>
                     <option value="inPerson">In-person</option>
@@ -39,25 +43,27 @@
                 
                 <div class="col">
                   <label for="courseCode">Course Code</label>
-                  <input type="text" id="courseCode" class="add" placeholder="course code" />
+                  <input name="Course_Code" type="text" id="courseCode" class="add" placeholder="course code" />
                 </div>
 
                 <div class="col">
                   <label for="courseLevel">Is Elective</label>
-                  <select id="courseLevel" class="add">
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
+                  <select  name="Elective" id="courseLevel" class="add">
+                    <option value="0">Yes</option>
+                    <option value="1">No</option>
                   </select>
                 </div>
 
                 <div class="col">
                   <label for="CourseYear">Course Year</label>
-                  <select id="courseDuration" class="add">
-                    <option value="Monday">Freshman</option>
-                    <option value="Tuesday">First Year</option>
-                    <option value="Wednesday">Second Year</option>
-                    <option value="Wednesday">Junior</option>
-                    <option value="Wednesday">Graduate</option>
+                  <select name="Course_Year" id="courseDuration" class="add">
+                    <option value="0">Freshman</option>
+                    <option value="1">Sophmore</option>
+                    <option value="2">First Year</option>
+                    <option value="3">Second Year</option>
+                    <option value="4">Junior</option>
+                    <option value="5">Senior</option>
+                    <option value="6">Graduate</option>
                   </select>
                 </div>
                 
@@ -65,27 +71,36 @@
               <div class="row">
                 <div class="col">
                   <label for="courseDuration">Course Duration</label>
-                  <select id="courseDuration" class="add">
-                    <option value="Monday">1 hr</option>
-                    <option value="Tuesday">1:15 hr</option>
-                    <option value="Wednesday">1:30 hr</option>
-                    <option value="Thursday">1:45 hr</option>
-                    <option value="Friday">2 hr</option>
-                    <option value="Friday">2:15 hr</option>
-                    <option value="Friday">2:30 hr</option>
-                    <option value="Friday">2:45 hr</option>
-                    <option value="Friday">3:00 hr</option>
+                  <select name="Course_Duration" id="courseDuration" class="add">
+                    <option value="1">1 hr</option>
+                    <option value="1:15">1:15 hr</option>
+                    <option value="1:30">1:30 hr</option>
+                    <option value="1:45">1:45 hr</option>
+                    <option value="2:00">2 hr</option>
+                    <option value="2:15">2:15 hr</option>
+                    <option value="2:30">2:30 hr</option>
+                    <option value="2:45">2:45 hr</option>
+                    <option value="3:00">3:00 hr</option>
+                  </select>
+                </div>
+
+                <div class="col">
+                  <label  for="courseType">Frequency</label>
+                  <select name="Course_Iteration_Weekly" name="Course_Type" id="courseType" class="add">
+                    <option value="1">Once per week</option>
+                    <option value="2">Twice per week</option>
+                    <option value="3">Three times per week</option>
                   </select>
                 </div>
               </div>
-    
+     <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Add</button>
+      </div>
             </form>
           </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+     
     </div>
   </div>
 </div>

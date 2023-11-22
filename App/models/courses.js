@@ -16,18 +16,16 @@ let db = new sqlite3.Database(
 );
 
 // Function to add a new course
-function addCourse(
-  Major,
-  Course_Name,
-  Course_Code,
-  Course_Type,
-  Elective,
-  Course_Iteration_Weekly,
-  Course_Duration,
-  Course_Year,
-  Need_Lab
-) {
-  const sql = `INSERT INTO course (Major, Course_Name, Course_Code, Course_Type, Elective, Course_Iteration_Weekly, Course_Duration, Course_Year, Need_Lab) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+function addCourse(req,res) {
+  let {Major,
+    Course_Name,
+    Course_Code,
+    Course_Type,
+    Elective,
+    Course_Iteration_Weekly,
+    Course_Duration,
+    Course_Year}=req.body
+  const sql = `INSERT INTO course (Major, Course_Name, Course_Code, Course_Type, Elective, Course_Iteration_Weekly, Course_Duration, Course_Year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
   db.run(
     sql,
     [
@@ -39,63 +37,15 @@ function addCourse(
       Course_Iteration_Weekly,
       Course_Duration,
       Course_Year,
-      Need_Lab,
+   
     ],
     function (err) {
       if (err) {
-        return console.error(err.message);
+        return res.send(err.message);
       }
-      console.log(`A row has been inserted with rowid ${this.lastID}`);
+      res.redirect("/");
     }
   );
-}
-
-// Function to update a course's details
-function updateCourse(
-  CourseID,
-  Major,
-  Course_Name,
-  Course_Code,
-  Course_Type,
-  Elective,
-  Course_Iteration_Weekly,
-  Course_Duration,
-  Course_Year,
-  Need_Lab
-) {
-  const sql = `UPDATE course SET Major = ?, Course_Name = ?, Course_Code = ?, Course_Type = ?, Elective = ?, Course_Iteration_Weekly = ?, Course_Duration = ?, Course_Year = ?, Need_Lab = ? WHERE CourseID = ?`;
-  db.run(
-    sql,
-    [
-      Major,
-      Course_Name,
-      Course_Code,
-      Course_Type,
-      Elective,
-      Course_Iteration_Weekly,
-      Course_Duration,
-      Course_Year,
-      Need_Lab,
-      CourseID,
-    ],
-    function (err) {
-      if (err) {
-        return console.error(err.message);
-      }
-      console.log(`Row(s) updated: ${this.changes}`);
-    }
-  );
-}
-
-// Function to delete a course
-function deleteCourse(CourseID) {
-  const sql = `DELETE FROM course WHERE CourseID = ?`;
-  db.run(sql, CourseID, function (err) {
-    if (err) {
-      return console.error(err.message);
-    }
-    console.log(`Row(s) deleted: ${this.changes}`);
-  });
 }
 
 function renderPage(req, res) {
@@ -110,4 +60,5 @@ function renderPage(req, res) {
 
 module.exports = {
   renderPage,
+  addCourse
 };
