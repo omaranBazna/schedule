@@ -45,7 +45,7 @@
               <div class="row">
                 <div class="col">
                   <label for="weekday">Week Day</label>
-                  <select id="weekday" class="add">
+                  <select name="day" id="weekday" class="add">
                     <option value="Monday">Monday</option>
                     <option value="Tuesday">Tuesday</option>
                     <option value="Wednesday">Wednesday</option>
@@ -55,8 +55,8 @@
                 </div>
 
                 <div class="col">
-                  <label name="TSlot_ID" for="courseMajor">Start Time</label>
-                  <input type="time" id="courseCredits" class="add" placeholder="Enter Start Time" />
+                  <label for="courseStart">Start Time</label>
+                  <input name="time" type="time"   min="08:00" max="17:45" size="10" step="900" id="courseStart" class="add" placeholder="Enter Start Time"> 
                 </div>
 
                 <div class="col">

@@ -17,8 +17,17 @@ function renderPage(req, res) {
 }
 
 function addAvailability(req, res) {
-  let { Availability_Duration, Availability_Type, Prof_ID, Cour_ID, TSlot_ID } =
-    req.body;
+  let {
+    Availability_Duration,
+    Availability_Type,
+    Prof_ID,
+    Cour_ID,
+    time,
+    day,
+  } = req.body;
+  console.log(slots);
+  return res.send(req.body);
+
   let sql = `INSERT INTO availability (Availability_Duration, Availability_Type, Prof_ID, Cour_ID, TSlot_ID)
               VALUES (?, ?, ?, ?, ?)`;
 

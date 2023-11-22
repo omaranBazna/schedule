@@ -1,4 +1,4 @@
-export const slots = [
+const slots = [
   { id: 1, day: "Monday", time: "08:00 AM" },
   { id: 2, day: "Monday", time: "08:15 AM" },
   { id: 3, day: "Monday", time: "08:30 AM" },
@@ -204,3 +204,5 @@ export const slots = [
   { id: 199, day: "Friday", time: "05:30 PM" },
   { id: 200, day: "Friday", time: "05:45 PM" },
 ];
+
+module.exports = slots;
