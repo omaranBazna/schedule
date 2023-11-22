@@ -48,21 +48,21 @@ function deleteProfessor(ProfessorID) {
   });
 }
 
-function getProfessors(req, res) {
+function renderPage(req, res) {
   const sql = `select * from professor`;
-  db.run(sql, function (err, rows) {
+  db.all(sql, function (err, rows) {
     if (err) {
       return res.send(err.message);
     }
-    res.send({ rows });
+    console.log(rows);
+    res.render("professors", {
+      rows: rows ? rows : [],
+    });
   });
-}
-function renderPage(req, res) {
-  res.render("professors");
 }
 module.exports = {
   renderPage,
-  getProfessors,
+
   updateProfessor,
   deleteProfessor,
   addProfessor,

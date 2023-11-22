@@ -99,20 +99,16 @@ function deleteCourse(CourseID) {
 }
 
 function renderPage(req, res) {
-  res.render("courses");
-}
-
-function getCourses(req,res){
-  const sql = `select * from professor`;
-  db.run(sql, function (err, rows) {
+  const sql = `select * from course`;
+  db.all(sql, function (err, rows) {
     if (err) {
       return res.send(err.message);
     }
-    res.send({ rows });
+    res.render("courses", { rows });
   });
 }
 
 module.exports = {
   renderPage,
-  getCourses
+  getCourses,
 };

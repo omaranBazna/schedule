@@ -16,17 +16,17 @@
               <div class="row">
                 <div class="col">
                   <label for="firstName">Professor First Name</label>
-                  <input type="number" id="firstName" class="add" placeholder="Enter First Name" />
+                  <input type="text" id="firstName" class="add" placeholder="Enter First Name" />
                 </div>
                 <div class="col">
                   <label for="lastName">Professor Last Name</label>
-                  <input type="number" id="lastName" class="add" placeholder="Enter Last Name" />
+                  <input type="text" id="lastName" class="add" placeholder="Enter Last Name" />
                 </div>
                 <div class="col">
-                  <label for="courseMajor">Type</label>
-                  <select id="courseMajor" class="add">
-                    <option value="F>Full-Time</option>
-                    <option value="EE">Edjacentgineering</option>
+                  <label for="professorType">Type</label>
+                  <select id="professorType" class="add">
+                    <option value="Full-Time">Full-TIme</option>
+                    <option value="Adjacent">Adjacent</option>
                   </select>
                 </div>
                 <div class="col">
@@ -57,8 +57,6 @@
     </div>
   </div>
 </div>
-
-
 
 <div class="container hd-pg justify-content-end">
   <div class="row">
@@ -96,28 +94,21 @@
             <th>Professor Name</th>
             <th>Type</th>
             <th>Seniority</th>
-            <th>Actions</th>
+         
           </tr>
       </thead>
       <tbody>
-          <tr>
-            <td>Dr. Mina</td>
-            <td>Full-time</td>
-            <td>5</td>
-            <td>
-              <span class="edit-icon">&#9998;</span>
-              <span class="delete-icon">&#128465;</span>
-            </td>
-          </tr>
-          <tr>
-            <td>Dr. Mina</td>
-            <td>Adjacent</td>
-            <td>3</td>
-            <td>
-              <span class="edit-icon">&#9998;</span>
-              <span class="delete-icon">&#128465;</span>
-            </td>
-          </tr>
+     
+         <% for(let i=0;i<rows.length;i++) {%>
+           <tr>
+            <td><%=rows[i].Fname%> <%=rows[i].Lname%></td>
+            <td><%=rows[i].Professor_Type%></td>
+            <td><%=rows[i].Seniority%></td>
+          
+           </tr>
+
+         <%}%>
+          
           <!-- Add more rows as needed -->
       </tbody>
   </table>

@@ -16,7 +16,7 @@ CREATE TABLE  course (
     Elective BOOLEAN NOT NULL,
     Course_Iteration_Weekly INTEGER NOT NULL,
     Course_Duration TEXT NOT NULL,
-    Course_Year INTEGER NOT NULL
+    Course_Year TEXT NOT NULL
   );
 
 
@@ -54,3 +54,75 @@ VALUES ('Jonathan', 'Weaver', 'adjunct', 2);
 
 INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
 VALUES ('James', 'Lynch', 'adjunct', 1);
+-- new data for professor
+-- Inserting Full-time professors
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Shadi', 'Bani Taan', 'Full-time', 9);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Kathy', 'Zhong', 'Full-time', 10);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Mariam', 'Faied', 'Full-time', 8);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Santora', 'N', 'Full-time', 5);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Mohan', 'N', 'Full-time', 8);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Sawash', 'N', 'Full-time', 6);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Steffka', 'N', 'Full-time', 9);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Jonathan', 'Weaver', 'Full-time', 10);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('James', 'Lynch', 'Full-time', 8);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Lahdiri', 'N', 'Full-time', 5);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Utayba', 'Mohammad', 'Full-time', 8);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Shuvra', 'Das', 'Full-time', 6);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Nizar', 'Al-Holou', 'Full-time', 9);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Dave', 'McCall', 'Full-time', 10);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Mustafa', 'Demir', 'Full-time', 8);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Mina', 'Maleki', 'Full-time', 9);
+
+-- Inserting Adjunct professors
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Robert', 'Ross', 'Adjunct', 8);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Adibi', 'N', 'Adjunct', 6);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Mohamed', 'Nafea', 'Adjunct', 5);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('J.', 'Boat', 'Adjunct', 8);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Al Haj', 'Ahamed', 'Adjunct', 6);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Abhijit', 'Dasgupta', 'Adjunct', 10);
+
+INSERT INTO professor (Fname, Lname, Professor_Type, Seniority)
+VALUES ('Comp.', 'Org', 'Adjunct', 8);
+
