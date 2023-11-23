@@ -94,7 +94,7 @@ function addAvailability(req, res) {
     time,
     day,
   } = req.body;
-
+  
   let element = slots.find(
     (item) => item.day.indexOf(day) > -1 && item.time.indexOf(time) > -1
   );
