@@ -80,6 +80,26 @@ git push origin <branch_name>
 [Explanation for first-time usage](https://youtu.be/qBZSC-qa1z4) <br><br>
 [Explanation for contribute next times](https://youtu.be/gxapDt3uuAM)
 
+
+# Testing plan :
+# Generating Input
+## step1: Functional testing ( to test if it is correct)
+  - Test the algorithm against the availability provided by the Mariem  Excel sheet for Winter 2023 (not involve a lot of availability options for each professor)</br>
+## step2: Random testing ( to test it with a wide variety of inputs)
+  - Make an extra fake (but follow guidelines like not including lunchtime, data period collecting among the team (team members do not know what other members are inputting to reduce bias)</br>
+## step3: Stress test (test it when there are a lot of conflicts)
+  - Add extra availabilities that challenge the algorithm like came up with conflicts among courses, conflicts between professors, and conflicts between years.
+
+# Evaluating the result:
+## Main measurement: after the schedule is done, how many courses are left with putting it on the schedule
+## Other measurements: how spread the courses are, professor's preferences, student's preferences
+
+
+# Create feedback mechanism:
+## to be done
+
+
+
 # Branches Map 
 https://drive.google.com/file/d/1rGzR8xYTPfmXAJHsi8H0P4W3NeOfKRvu/view?usp=sharing
 ![Branches_map drawio (1)](https://github.com/omaranBazna/schedule/assets/100542103/8d09eb3c-d21f-4990-8bcd-d40a12e37bae)
